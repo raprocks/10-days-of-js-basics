@@ -21,30 +21,19 @@ process.stdin.on('end', _ => {
 function readLine() {
     return inputString[currentLine++];
 }
-
 /*
- * Complete the vowelsAndConsonants function.
- * Print your output using 'console.log()'.
+ * Create the function factorial here
  */
-function vowelsAndConsonants(s) {
-    for (var char in s) {
-        char= s[char];
-        if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char == 'u') {
-            console.log(char);
-        }
+const factorial = (n) => {
+    if (n==1){
+        return n
+    } else {
+        return n*factorial(n-1)
     }
-    for (var char in s) {
-        char = s[char];
-        if (!(char === 'a' || char === 'e' || char === 'i' || char === 'o' || char == 'u')) {
-            console.log(char);
-        }
-    }
-        
 }
 
-
 function main() {
-    const s = readLine();
+    const n = +(readLine());
     
-    vowelsAndConsonants(s);
+    console.log(factorial(n));
 }
