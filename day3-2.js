@@ -1,24 +1,24 @@
-'use strict';
+"use strict";
 
 process.stdin.resume();
-process.stdin.setEncoding('utf-8');
+process.stdin.setEncoding("utf-8");
 
-let inputString = '';
+let inputString = "";
 let currentLine = 0;
 
-process.stdin.on('data', inputStdin => {
+process.stdin.on("data", inputStdin => {
     inputString += inputStdin;
 });
 
-process.stdin.on('end', _ => {
-    inputString = inputString.trim().split('\n').map(string => {
+process.stdin.on("end", _ => {
+    inputString = inputString.trim().split("\n").map(string => {
         return string.trim();
     });
-    
-    main();    
+
+    main();
 });
 
-function readLine() {
+function readLine () {
     return inputString[currentLine++];
 }
 
@@ -26,21 +26,20 @@ function readLine() {
  * Complete the reverseString function
  * Use console.log() to print to stdout.
  */
-function reverseString(s) {
+function reverseString (s) {
     try {
-        s = s.split("")
-        s = s.reverse()
-        s = s.join("")
+        s = s.split("");
+        s = s.reverse();
+        s = s.join("");
     } catch (e) {
-        console.log(e.message)
+        console.log(e.message);
     } finally {
-        console.log(s)
+        console.log(s);
     }
 }
 
-
-function main() {
+function main () {
     const s = eval(readLine());
-    
+
     reverseString(s);
 }

@@ -3,13 +3,14 @@
  * 1. A constructor that takes an array of integer side lengths.
  * 2. A 'perimeter' method that returns the sum of the Polygon's side lengths.
  */
-class Polygon{
-    constructor(arr){
+class Polygon {
+    constructor (arr) {
         this.sides = arr;
     }
-    perimeter(){
-        var peri = 0;
-        for (var i in this.sides){
+
+    perimeter () {
+        let peri = 0;
+        for (const i in this.sides) {
             peri += this.sides[i];
         }
         return peri;
