@@ -1,0 +1,26 @@
+{
+  "name": "10-days-of-js-basics",
+  "version": "1.0.0",
+  "description": "Solutions to 10 Days of JavaScript Challenge on HackerRank",
+  "main": "none",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raprocks/10-days-of-js-basics.git"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Rohit Patil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raprocks/10-days-of-js-basics/issues"
+  },
+  "homepage": "https://github.com/raprocks/10-days-of-js-basics#readme",
+  "devDependencies": {
+    "eslint": "^7.27.0"
+  }
+}
