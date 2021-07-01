@@ -25,6 +25,6 @@ function rotateButtons(){
 btn5.onclick = (_e) => {
     console.log("click");
     rotateButtons();
-}
+};
 
 
